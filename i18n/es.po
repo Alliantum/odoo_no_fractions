@@ -18,29 +18,29 @@ msgstr ""
 #. module: odoo_no_fractions
 #: model:ir.model.fields,field_description:odoo_no_fractions.field_uom_category__avoid_sell_fractions
 msgid "Avoid Sell Fractions"
-msgstr "Vermeiden Sie den Verkauf von Fraktionen"
+msgstr "Evite vender fracciones"
 
 #. module: odoo_no_fractions
 #: code:addons/odoo_no_fractions/models/account_line.py:19
 #: code:addons/odoo_no_fractions/models/sale_order_line.py:18
 #, python-format
 msgid "Invalid Product Quantity"
-msgstr "Ungültige Produktmenge"
+msgstr "Cantidad de producto no válida"
 
 #. module: odoo_no_fractions
 #: model:ir.model,name:odoo_no_fractions.model_account_invoice_line
 msgid "Invoice Line"
-msgstr "Rechungsposition"
+msgstr "Linea de Factura"
 
 #. module: odoo_no_fractions
 #: model:ir.model,name:odoo_no_fractions.model_uom_category
 msgid "Product UoM Categories"
-msgstr "Kategorien für Maßeinheiten von Produkten"
+msgstr "Categoria de productos UdM"
 
 #. module: odoo_no_fractions
 #: model:ir.model,name:odoo_no_fractions.model_sale_order_line
 msgid "Sales Order Line"
-msgstr "Auftragsposition"
+msgstr "Línea de pedido de venta"
 
 #. module: odoo_no_fractions
 #: code:addons/odoo_no_fractions/models/sale_order_line.py:19
@@ -50,8 +50,8 @@ msgstr "Auftragsposition"
 #, python-format
 msgid "Your're trying to sell {} {} of the product {}.\n"
 " However the UoM for that product ( {} ) doesn't allow to sell floating point amounts of it. Please enter a non-decimal Ordered Qty."
-msgstr "Sie versuchen zu verkaufen {} {} des Produkts {}.\n"
-" Die UoM für dieses Produkt ( {} ) erlaubt es jedoch nicht, Fließkommabeträge davon zu verkaufen. Bitte geben Sie eine nicht-dezimale Bestellmenge ein."
+msgstr "Estás tratando de vender {} {} del producto {}.\n"
+" Sin embargo, la UoM para ese producto ( {} ) no permite vender cantidades en coma flotante del mismo. Por favor, introduzca una cantidad de pedido no decimal."
 
 #. module: odoo_no_fractions
 #: code:addons/odoo_no_fractions/models/account_line.py:63
@@ -59,8 +59,8 @@ msgstr "Sie versuchen zu verkaufen {} {} des Produkts {}.\n"
 #, python-format
 msgid "Your're trying to sell {} {} of the product {}.\n"
 " However the UoM for that product ( {} ) doesn't allow to sell floating point amounts of it. Please enter a non-decimal Ordered Quantity."
-msgstr "Sie versuchen zu verkaufen {} {} des Produkts {}.\n"
-" Die UoM für dieses Produkt ( {} ) erlaubt es jedoch nicht, Fließkommabeträge davon zu verkaufen. Bitte geben Sie eine nicht-dezimale Bestellmenge ein."
+msgstr "Estás tratando de vender {} {} del producto {}.\n"
+" Sin embargo, la UoM para ese producto ( {} ) no permite vender cantidades en coma flotante del mismo. Por favor, introduzca una cantidad de pedido no decimal."
 
 #. module: odoo_no_fractions
 #: code:addons/odoo_no_fractions/models/account_line.py:20
@@ -68,22 +68,22 @@ msgstr "Sie versuchen zu verkaufen {} {} des Produkts {}.\n"
 #, python-format
 msgid "Your're trying to sell {} {} of the product {}.\n"
 " However the UoM for that product ( {} ) doesn't allow to sell floating point amounts of it. Please enter a non-decimal Quantity."
-msgstr "Sie versuchen zu verkaufen {} {} des Produkts {}.\n"
-" Die UoM für dieses Produkt ( {} ) erlaubt es jedoch nicht, Fließkommabeträge davon zu verkaufen. Bitte geben Sie eine nicht-dezimale Bestellmenge ein."
+msgstr "Estás tratando de vender {} {} del producto {}.\n"
+" Sin embargo, la UoM para ese producto ( {} ) no permite vender cantidades en coma flotante del mismo. Por favor, introduzca una cantidad no decimal."
 
 #. module: odoo_no_fractions
 #: code:addons/odoo_no_fractions/models/sale_order_line.py:54
 #, python-format
 msgid "Your're trying to sell {} {}.\n"
 " However the UoM for that product ( {} ) doesn't allow to sell floating point amounts of it. Please enter a non-decimal Ordered Qty."
-msgstr "Sie versuchen zu verkaufen {} {} des Produkts {}.\n"
-" Die UoM für dieses Produkt ( {} ) erlaubt es jedoch nicht, Fließkommabeträge davon zu verkaufen. Bitte geben Sie eine nicht-dezimale Bestellmenge ein."
+msgstr "Estás tratando de vender {} {}.\n"
+" Sin embargo, la UoM para ese producto ( {} ) no permite vender cantidades en coma flotante del mismo. Por favor, introduzca una cantidad de pedido no decimal."
 
 #. module: odoo_no_fractions
 #: code:addons/odoo_no_fractions/models/account_line.py:55
 #, python-format
 msgid "Your're trying to sell {} {}.\n"
 " However the UoM for that product ( {} ) doesn't allow to sell floating point amounts of it. Please enter a non-decimal Ordered Quantity."
-msgstr "Sie versuchen zu verkaufen {} {} des Produkts {}.\n"
-" Die UoM für dieses Produkt ( {} ) erlaubt es jedoch nicht, Fließkommabeträge davon zu verkaufen. Bitte geben Sie eine nicht-dezimale Bestellmenge ein."
+msgstr "Estás tratando de vender {} {}.\n"
+" Sin embargo, la UoM para ese producto ( {} ) no permite vender cantidades en coma flotante del mismo. Por favor, introduzca una cantidad de pedido no decimal."
 
