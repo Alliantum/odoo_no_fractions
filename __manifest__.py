@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 {
     'name': "Avoid UoM Fractions",
     'summary': """Avoid selling non-integer quantities of a Unit of Measure category""",
@@ -13,4 +12,7 @@
     'data': [
         'views/product_uom_categ.xml',
     ],
+    'auto_install': False,
+    'application': False,
+    'installable': True,
 }
