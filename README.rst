@@ -20,7 +20,7 @@ Avoid UoM Fractions
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://shields.io/badge/Alliantum%2fodoo_no_fractions-24c3f3?style=for-the-badge&logo=github&label=github
-    :target: https://github.com/Alliantum/odoo_no_fractions/tree/master/odoo_no_fractions
+    :target: https://github.com/Alliantum/odoo_no_fractions/tree/master
     :alt: Alliantum/odoo_no_fractions
 
 |badge1| |badge2| |badge3| 
