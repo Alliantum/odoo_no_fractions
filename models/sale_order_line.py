@@ -5,7 +5,6 @@ from odoo.exceptions import ValidationError
 class SaleOrderLine(models.Model):
     _inherit = 'sale.order.line'
 
-    @api.multi
     @api.onchange('product_uom', 'product_uom_qty')
     def _check_avoid_fractions(self):
         """If the uom category of a product has `avoid_sell_fractions` enabled, and the
@@ -39,7 +38,6 @@ class SaleOrderLine(models.Model):
                                                                                                                                   line.product_uom.name))
         return lines
 
-    @api.multi
     def write(self, vals):
         """If the uom category of a product has `avoid_sell_fractions` enabled, and the
         quantity is not an integer, return an error that prevents saving the quotation when

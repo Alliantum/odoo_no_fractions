@@ -5,7 +5,6 @@ from odoo.exceptions import ValidationError
 class AccountInvoiceLine(models.Model):
     _inherit = 'account.invoice.line'
 
-    @api.multi
     @api.onchange('product_id', 'uom_id')
     def _check_avoid_fractions(self):
         """If the uom category of a product has `avoid_sell_fractions` enabled, and the
@@ -40,7 +39,6 @@ class AccountInvoiceLine(models.Model):
                                                                                                                                line.uom_id.name))
         return lines
 
-    @api.multi
     def write(self, vals):
         """If the uom category of a product has `avoid_sell_fractions` enabled, and the
         quantity is not an integer, return an error that prevents saving the invoice when
