@@ -28,7 +28,7 @@ msgid "Invalid Product Quantity"
 msgstr "Ongeldige producthoeveelheid"
 
 #. module: odoo_no_fractions
-#: model:ir.model,name:odoo_no_fractions.model_account_invoice_line
+#: model:ir.model,name:odoo_no_fractions.model_account_move_line
 msgid "Invoice Line"
 msgstr "Factuurregel"
 

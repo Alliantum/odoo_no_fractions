@@ -3,7 +3,7 @@ from odoo.exceptions import ValidationError
 
 
 class AccountInvoiceLine(models.Model):
-    _inherit = 'account.invoice.line'
+    _inherit = 'account.move.line'
 
     @api.onchange('product_id', 'uom_id')
     def _check_avoid_fractions(self):
