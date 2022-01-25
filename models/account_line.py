@@ -5,7 +5,7 @@ from odoo.exceptions import ValidationError
 class AccountInvoiceLine(models.Model):
     _inherit = 'account.move.line'
 
-    @api.onchange('product_id', 'uom_id')
+    @api.onchange('product_id', 'product_uom_id')
     def _check_avoid_fractions(self):
         """If the uom category of a product has `avoid_sell_fractions` enabled, and the
         quantity is not an integer, display a warning"""
