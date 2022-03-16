@@ -13,7 +13,7 @@ class SaleOrderLine(models.Model):
             if int(self.product_uom_qty) != self.product_uom_qty:
                 warning = {
                     'title': _('Invalid Product Quantity'),
-                    'message': _("Your're trying to sell {} {} of the product {}.\n"
+                    'message': _("You're trying to sell {} {} of the product {}.\n"
                                  " However the UoM for that product ( {} ) doesn't allow to"
                                  " sell floating point amounts of it. Please enter a non-decimal Ordered Qty.").format(self.product_uom_qty,
                                                                                                                        self.product_uom.name,
@@ -30,7 +30,7 @@ class SaleOrderLine(models.Model):
         for line in lines:
             if line.product_uom.category_id.avoid_sell_fractions:
                 if int(line.product_uom_qty) != line.product_uom_qty:
-                    raise ValidationError(_("Your're trying to sell {} {} of the product {}.\n"
+                    raise ValidationError(_("You're trying to sell {} {} of the product {}.\n"
                                             " However the UoM for that product ( {} ) doesn't allow to"
                                             " sell floating point amounts of it. Please enter a non-decimal Ordered Qty.").format(line.product_uom_qty,
                                                                                                                                   line.product_uom.name,
@@ -47,7 +47,7 @@ class SaleOrderLine(models.Model):
             uom_id = self.env['uom.uom'].browse(vals.get('product_uom'))
             if uom_id.category_id.avoid_sell_fractions:
                 if vals.get('product_uom_qty') and (int(vals.get('product_uom_qty')) != vals.get('product_uom_qty')):
-                    raise ValidationError(_("Your're trying to sell {} {}.\n"
+                    raise ValidationError(_("You're trying to sell {} {}.\n"
                                             " However the UoM for that product ( {} ) doesn't allow to"
                                             " sell floating point amounts of it. Please enter a non-decimal Ordered Qty.").format(vals.get('product_uom_qty'),
                                                                                                                                   uom_id.name,
@@ -55,7 +55,7 @@ class SaleOrderLine(models.Model):
                 else:
                     for line in self:
                         if int(line.product_uom_qty) != line.product_uom_qty:
-                            raise ValidationError(_("Your're trying to sell {} {} of the product {}.\n"
+                            raise ValidationError(_("You're trying to sell {} {} of the product {}.\n"
                                                     " However the UoM for that product ( {} ) doesn't allow to"
                                                     " sell floating point amounts of it. Please enter a non-decimal Ordered Qty.").format(line.product_uom_qty,
                                                                                                                                           line.product_uom.name,
@@ -65,7 +65,7 @@ class SaleOrderLine(models.Model):
             for line in self:
                 if line.product_uom.category_id.avoid_sell_fractions:
                     if int(vals.get('product_uom_qty')) != vals.get('product_uom_qty'):
-                        raise ValidationError(_("Your're trying to sell {} {} of the product {}.\n"
+                        raise ValidationError(_("You're trying to sell {} {} of the product {}.\n"
                                                 " However the UoM for that product ( {} ) doesn't allow to"
                                                 " sell floating point amounts of it. Please enter a non-decimal Ordered Qty.").format(vals.get('product_uom_qty'),
                                                                                                                                       line.product_uom.name,

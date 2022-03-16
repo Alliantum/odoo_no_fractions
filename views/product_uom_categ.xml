@@ -1,14 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- Add an `avoid_sell_fractions` checkbox to the uom category form view -->
-    <record id="uom_category_avoid_frac_from" model="ir.ui.view">
-        <field name="name">uom.category.avoid.frac.from</field>
+    <record id="uom_category_avoid_frac_tree" model="ir.ui.view">
+        <field name="name">uom.category.avoid.frac.tree</field>
         <field name="model">uom.category</field>
-        <field name="inherit_id" ref="uom.product_uom_categ_form_view" />
+        <field name="inherit_id" ref="uom.product_uom_categ_tree_view" />
         <field name="arch" type="xml">
-            <field name="name" position="after">
+            <tree position="inside">
                 <field name="avoid_sell_fractions" />
-            </field>
+            </tree>
         </field>
     </record>
 
